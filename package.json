@@ -1,0 +1,28 @@
+{
+  "name": "simple-groups",
+  "version": "0.0.1",
+  "description": "A simple, client-only, browser-based group assignment tool.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/awayken/Simple-Groups.git"
+  },
+  "keywords": [
+    "groups"
+  ],
+  "author": "Miles Rausch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/awayken/Simple-Groups/issues"
+  },
+  "homepage": "https://github.com/awayken/Simple-Groups",
+  "devDependencies": {
+    "gulp-util": "~2.2.14",
+    "gulp": "~3.5.2",
+    "gulp-ruby-sass": "~0.3.0",
+    "gulp-connect": "~0.3.1"
+  }
+}
