@@ -1,12 +1,20 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="phonecatApp">
 <head>
     <meta charset="utf-8">
     <title>Simple Groups for Mrs. Rausch and Mrs. Mayer!</title>
     <link rel="stylesheet" href="assets/styles/app.css">
     <script src="assets/scripts/angular.min.js"></script>
+    <script src="assets/scripts/controllers.js"></script>
 </head>
-<body>
-    <p>Nothing here {{'boyee' + '!'}}</p>
+<body ng-controller="PhoneListCtrl">
+
+  <ul>
+    <li ng-repeat="phone in phones">
+      {{phone.name}}
+      <p>{{phone.snippet}}</p>
+    </li>
+  </ul>
+
 </body>
 </html>
