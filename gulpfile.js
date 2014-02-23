@@ -5,9 +5,9 @@ var gulp = require('gulp'),
     connect = require('gulp-connect');
 
 var paths = {
-    stylesSource: [ '_assets/sass/*' ],
-    stylesDest: 'www/assets/styles',
-    webRoot: 'www'
+    stylesSource: [ 'app-assets/sass/*' ],
+    stylesDest: 'app',
+    webRoot: 'app'
 };
 
 

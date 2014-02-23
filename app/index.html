@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en" ng-app="simpleGroups">
+<head>
+    <meta charset="utf-8">
+    <title>Simple Groups for Mrs. Rausch and Mrs. Mayer!</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="angular.min.js"></script>
+    
+    <script src="app.js"></script>
+    <script src="group/group-controller.js"></script>
+<!--    <script src="components/phonecat/phonecat-service.js"></script>-->
+</head>
+<body>
+    <ul ng-controller="GroupCtrl">
+        <li ng-repeat="group in groups">{{group.name}}</li>
+    </ul>
+</body>
+</html>
