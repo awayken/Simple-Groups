@@ -1,7 +1,6 @@
 'use strict';
 
 angular.module('simpleGroupsApp', [
-  'ngCookies',
   'ngResource',
   'ngSanitize',
   'ngRoute'
@@ -9,8 +8,8 @@ angular.module('simpleGroupsApp', [
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/group.html',
+        controller: 'GroupCtrl'
       })
       .otherwise({
         redirectTo: '/'
