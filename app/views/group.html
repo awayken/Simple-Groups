@@ -2,6 +2,38 @@
     <h1>Simple Groups</h1>
 </header>
 
+<section>
+    <fieldset>
+        <span>Number of students: {{students.length}}</span>
+
+        <label for="groupsize">Group size:</label>
+        <select id="groupsize" ng-model="groupSize">
+            <option value="1">1 student</option>
+            <option value="2">2 students</option>
+            <option value="3">3 students</option>
+            <option value="4">4 students</option>
+            <option value="5">5 students</option>
+            <option value="6">6 students</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <button ng-click="assignGroups(groupSize,students)">Assign Group Members</button>
+    </fieldset>
+
+    <ul>
+        <li ng-repeat="student in students">{{student.name}}</li>
+    </ul>
+
+    <div ng-repeat="group in groups">
+        <h1>Group {{group.number + 1}}</h1>
+
+        <ul>
+            <li ng-repeat="student in group.students">{{student.name}}</li>
+        </ul>
+    </div>
+</section>
+
 <!--
 <!DOCTYPE html>
 <html>
@@ -20,18 +52,18 @@ Melissa J
 AJ L
 Adam W</textarea>
   </section>
-  
+
   <section>
     We will have <input type="number" id="group_number" name="group_number" value="3"> groups.
   </section>
-  
+
   <section>
     <button id="draw">Draw</button>
   </section>
-  
+
   <section id="groups">
   </section>
-    
+
 </body>
 </html>
 -->
